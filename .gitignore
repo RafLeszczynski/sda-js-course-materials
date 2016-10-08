@@ -146,3 +146,5 @@ tags
 
 #other idea stuff
 .idea/*
+/pangram/nbproject/private/
+/best-practices/pangram/dsm/nbproject/private/
