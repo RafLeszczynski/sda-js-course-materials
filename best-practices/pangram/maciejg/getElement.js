@@ -6,5 +6,4 @@ document.getElementById("pangramChecker").addEventListener("submit", function(ev
 
     document.getElementById("result").textContent = validation;     
     document.getElementById("missingLetters").textContent = sharedElements;     
-
 });
