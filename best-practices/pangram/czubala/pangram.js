@@ -5,7 +5,6 @@ function getInput() {
 }
 
 function compare(input) {
-    getInput();
     var tmp = [];
     for (var j = 0; j < alphabet.length; j++) {
         if (input.indexOf(alphabet[j]) === -1) {
