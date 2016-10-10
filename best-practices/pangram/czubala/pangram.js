@@ -1,7 +1,7 @@
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'w', 'x', 'y', 'z'];
 
 function getInput() {
-    return document.getElementById('pangramInput').value;
+    return document.getElementById('pangramInput').value.toLowerCase();
 }
 
 function compare(input) {
