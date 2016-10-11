@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+  <form id="pangramChecker">
+    <h1>Pangram checker</h1>
+    <p>Check is given sentance it valid pangram</p>
+    <label for="pangramInput">Type santence to check: </label>
+    <input id= "pangramInput" />
+    <button id="submit">Submit</button>
+    <p>Is valid pangram: <span id="result"/></p>
+    <p>Missing letters: <span id="missingLetters"/></p>
+  </form>
+
+  <script type="text/javascript" src="js/PangramChecker.js"></script>
+  <script type="text/javascript" src="js/Connector.js"></script>
+
+  <script type="text/javascript">
+  	var checker = new PangramChecker();
+  	var connector = new Connector(checker);
+  	connector.addSubmitListener();
+
+  </script>
+</body>
+</html>

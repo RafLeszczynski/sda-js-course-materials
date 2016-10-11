@@ -8,7 +8,15 @@ function getRawNumberFromCSSUnit(unit) {
   if (typeof unit !== 'string') {
     throw new Error('argument must be typeof string')
   }
-
+//  
+//  if (typeof parseFloat(unit) === 'Nan') {
+//     throw new Error('this is a NaN')
+//  }
+//  
+//  if (unit.split('').indexOf('%') === unit.length -1 &&
+//          typeof parseInt(unit.split('').splice(0,unit.length-1).join('')) === 'number') {
+//      return parseFloat(unit)/100;
+//}
   return parseFloat(unit);
 }
 
